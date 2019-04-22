@@ -1,0 +1,246 @@
+html, body {
+    background-color: rgb(63, 63, 63);
+    font-family: 'Roboto Slab', serif;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+#headerBox {
+    position: relative;
+    margin: auto;
+    margin-top: 1%;
+
+    width: 97%;
+
+    background-color: rgb(109, 109, 109);
+    border-radius: 15px;
+
+    color: white;
+    line-height: 300%;
+    z-index: 2;
+}
+
+#headerBox > h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+}
+
+#currencyBar{
+    position: relative;
+    margin: auto;
+    margin-top: 1%;
+
+    width: 30%;
+
+    background-color: rgb(109, 109, 109);
+    border-radius: 15px;
+
+    color: white;
+    line-height: 300%;
+    z-index: 2;
+}
+#currencyBar > h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+}
+
+#mainContentContainer {
+    height: 90%;
+    width: 97%;
+    margin: auto;
+    margin-top: 25px;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    min-height: 700px;
+}
+
+#leftColumn {
+    height: 90%;
+    width: 20%;
+    background-color:  rgb(109, 109, 109);
+    z-index: 2;
+    margin: 1%;
+    order: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#president {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#president > div {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2%;
+    background-color: aqua;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    border: 2px solid rgb(39, 39, 39);
+    box-shadow: 3px 2px 4px rgb(70, 70, 70);
+
+}
+#presidentProgressBarBG {
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: 15%;
+    max-height: 1.5em;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    left: 0;
+
+}
+#presidentProgressBar {
+    left: 0;
+    position: absolute;
+    background-color: rgb(31, 197, 31);
+    width: 00%;
+    height: 100%;
+
+}
+#presidentWorkBtn {
+    margin: auto;
+    margin-bottom: 2%;
+    height: 8%;
+    padding: 1%;
+}
+
+#centerColumn {
+    height: 90%;
+    
+    width: 40%;
+    background-color:  rgb(109, 109, 109);
+    z-index: 2;
+    margin: 1%;
+    order: 2;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#centerColumn > div {
+    width: 80%;
+    height: 15%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background-color: aqua;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    border: 2px solid rgb(39, 39, 39);
+    box-shadow: 3px 2px 4px rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#centerColumn > div > span > h3 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(114, 114, 114);
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 3px rgb(29, 29, 29);
+    padding: 0.5%;
+    width: 85%;
+    height: 25%;
+    font-size: 110%;
+}
+
+#centerColumn > div > span > h4 {
+    margin: 0;
+}
+
+.topCardText {
+    display: inline;
+}
+.cardBtn{
+    margin: 0;
+    background-color: rgb(114, 114, 114);
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
+    width: 20%;
+    min-width: 100px;
+    height: 50%;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;
+    z-index: 5;
+}
+
+#workerProgressBarBG {
+    background-color: rgb(46, 46, 46);
+    width: 30%;
+    height: 5%;
+    max-height: 1.5em;
+    align-self: flex-end;
+    z-index: 30;
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#workerProgressBar {
+    left: 0;
+    position: absolute;
+    background-color: rgb(31, 197, 31);
+    width: 00%;
+    height: 100%;
+    z-index: 31;
+}
+
+#rightColumn {
+    height: 90%;
+    width: 20%;
+    background-color:  rgb(109, 109, 109);
+    z-index: 2;
+    margin: 1%;
+    order: 3;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#rightColumn > div {
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2%;
+    font-size: 1.25em; 
+}
+
+.buttons { 
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    border: 2px solid rgb(39, 39, 39);
+    box-shadow: 3px 2px 4px rgb(70, 70, 70);
+}
